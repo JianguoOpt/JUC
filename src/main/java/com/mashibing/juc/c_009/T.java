@@ -19,7 +19,7 @@ public class T {
 		System.out.println("m1 end");
 	}
 	
-	synchronized void m2() {
+	synchronized void m2() {//为什么synchronized 是可重入锁，因为如果子类调用父类而父类加了锁
 		try {
 			TimeUnit.SECONDS.sleep(2);
 		} catch (InterruptedException e) {

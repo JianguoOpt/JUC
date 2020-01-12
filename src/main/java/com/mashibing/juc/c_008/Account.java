@@ -5,6 +5,7 @@
  * 这样行不行？
  *
  * 容易产生脏读问题（dirtyRead）
+ * 能不加锁就不加锁，加完锁的效率低一百倍
  */
 
 package com.mashibing.juc.c_008;

@@ -43,7 +43,7 @@ public class T03_Sleep_Yield_Join {
         Thread t1 = new Thread(()->{
             for(int i=0; i<100; i++) {
                 System.out.println("A" + i);
-                try {
+                try {//
                     Thread.sleep(500);
                     //TimeUnit.Milliseconds.sleep(500)
                 } catch (InterruptedException e) {
